@@ -1,9 +1,12 @@
 a=int(input("Enter your amount here  "))
+
 t=float(input("Enter time here  "))
 
 interest=0
 
+
 if(a>=0 and a<100000):
+
     if(t>=0 and t<1):
         interest=interest+((a*5*t)/100)
         print(interest)
@@ -17,8 +20,11 @@ if(a>=0 and a<100000):
         interest=interest+((a*10*t)/100)
         print(interest)
     if(t<0):
-        print("Invalid input")
+        print("Invalid time entered")
+
+
 if(a>=100000 and a<1000000):
+
     if(t>=0 and t<1):
         interest=interest+((a*10*t)/100)
         print(interest)
@@ -32,8 +38,11 @@ if(a>=100000 and a<1000000):
         interest=interest+((a*15*t)/100)
         print(interest)
     if(t<0):
-        print("Invalid input")
+        print("Invalid time entered")
+
+
 if(a>=1000000 and a<10000000):
+
     if(t>=0 and t<1):
         interes=interest+((a*15*t)/100)
         print(interest)
@@ -45,10 +54,13 @@ if(a>=1000000 and a<10000000):
         print(interest)
     if(t>=10):
         interest=interest+((a*20*t)/100)
-        print(interst)
+        print(interest)
     if(t<0):
-        print("Invalid input")
+        print("Invalid time entered")
+
+
 if(a>=10000000):
+
     if(t>=0 and t<1):
         interest=interest+((a*20*t)/100)
         print(interest)
@@ -61,7 +73,9 @@ if(a>=10000000):
         interest=interest+((a*25*t)/100)
         print(interest)
     if(t<0):
-        print("Invalid input")
+        print("Invalid time entered")
+
+        
 if(a<0):
     print("Invalid amount entered")
 
