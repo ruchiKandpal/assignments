@@ -13,6 +13,7 @@ print(sum)
 
 
 
+
 if(sum==x):
     print("Its an arm strong number")
 else:
