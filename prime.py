@@ -1,38 +1,21 @@
 def prime(n):
+
     isprime=True
+
     if(n==0 or n==1):
         isprime=False
-
-    a=2     
-    while(a<len(n)):
-        if(a%2==0) :
+        return isprime
+    a=2
+    while(a<n):
+        if(n%a==0):
             isprime=False
-            return isprime
+            break
         a=a+1
+    return isprime
 
+number=[4,7,9,1,2,3,44,5]
 
-number=[2,3,4,19,5,8,23,10,22,335]
-
-print(prime(number))
-
-
-
-
-
-
-
-"""
-prime=True
-a=2
-while(a<len(number)):
-    if(number%a==0):
-        prime=False
-        break
-    a=a+1
-if(prime==True):
-    print(number)
-    """   
-#munhe kuch nahi aa ara h 
-#sorry
-
+for i in range(0,len(number)):
+    if(prime(number[i])==True):
+        print(i)
 
